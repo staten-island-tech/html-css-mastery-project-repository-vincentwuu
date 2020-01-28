@@ -1,3 +1,6 @@
+@import "_variables.scss";
+@import "_usergallery.scss";
+
 html {
     font-size: 62.5%;
     padding: 0;
@@ -5,6 +8,10 @@ html {
     box-sizing: border-box;
 }
 
-.intro-header {
-    
+.header {
+    position: relative;
+    height: 100vh;
+}
+body{
+    background-color: red;
 }
