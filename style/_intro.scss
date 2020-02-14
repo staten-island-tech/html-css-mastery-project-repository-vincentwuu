@@ -1,5 +1,7 @@
 @import "_variables.scss"
 
-.intro-header {
-    background-color: red($color: #000000);
+intro-header{
+    position: relative;
+    height: 100vh;
+    background-color: pink;
 }
