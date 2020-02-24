@@ -1,5 +1,9 @@
 .intro {
   height: 100vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(69, 162, 158, 0.5)), to(rgba(102, 252, 241, 0.5))), url(img/NYC.jpg);
+  background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(img/NYC.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -34,6 +38,21 @@
   text-shadow: 0.5rem 0.5rem black;
 }
 
+.cards {
+  height: 100vh;
+  position: relative;
+}
+
+.rotating-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0rem;
+  margin: 0rem;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -43,10 +62,7 @@ html {
 }
 
 body {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(69, 162, 158, 0.5)), to(rgba(102, 252, 241, 0.5))), url(img/NYC.jpg);
-  background-image: linear-gradient(to right bottom, rgba(69, 162, 158, 0.5), rgba(102, 252, 241, 0.5)), url(img/NYC.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #ffcccc;
 }
 
 .btn {

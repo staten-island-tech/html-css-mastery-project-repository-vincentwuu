@@ -1,0 +1,13 @@
+@import "_variables.scss";
+
+.cards {
+    height: 100vh;
+    position: relative;
+}
+
+.rotating-cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem;
+    margin: 0rem;    
+}
