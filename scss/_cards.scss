@@ -1,13 +1,58 @@
 @import "_variables.scss";
 
-.cards {
+.landscape {
     height: 100vh;
     position: relative;
+    background-image: url(img/ocean.jpg);
 }
 
-.rotating-cards {
+.card-container {
+    padding-bottom: 0;
+    border: 0;
+    height: 100vh;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    padding: 0rem;
-    margin: 0rem;    
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include laptop {
+        flex-direction: row;
+    }
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-side {
+    z-index: 1;
+    transition: all 1s;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 0 0 2.5rem 2.5rem rgba($color: #363232, $alpha: 1.0) inset;
+    backface-visibility: hidden;
+    @include tablet {
+        height: 25rem;
+        width: 25rem;
+        border-radius: 3rem;
+    }
+    @include laptop {
+        height: 50rem;
+        width: 30rem;
+    }
+    @include desktop {
+        height: 60rem;
+        width: 40rem;
+        border-radius: 4rem;
+    }
 }

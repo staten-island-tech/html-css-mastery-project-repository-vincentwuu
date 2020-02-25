@@ -2,11 +2,7 @@
 
 .intro {
   height: 100vh;
-  background-image: linear-gradient(
-    to right bottom,
-    rgba(color(primary), 0.5),
-    rgba(color(primary-light), 0.5),
-    ),
+  background-image:
     url(img/NYC.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,12 +22,22 @@
   align-items: center;
   color: white;
   text-transform: uppercase;
-  width: 100vw;
   text-align: center;
-  font-size: 12rem;
   font-family: "Galada", cursive;
 }
 
 .heading-title {
+  width: 80vw;
+  margin: 0 auto;
+  letter-spacing: 0rem;
+  font-size: 4rem;
   text-shadow: 0.5rem 0.5rem black;
+  @include tablet {
+    font-size: 6rem;
+    letter-spacing: 1.8rem;
+  }
+  @include laptop {
+    font-size: 10rem;
+    letter-spacing: 2.2rem;
+}
 }
