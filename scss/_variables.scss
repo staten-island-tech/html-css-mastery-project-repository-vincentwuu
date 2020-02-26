@@ -15,7 +15,13 @@ $desktop:1100px;
 @function color($color-name) {
   @return map-get($colors, $color-name);
 }
- 
+
+@mixin phone {
+  @media (min-width: #{$phone}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet}) {
     @content;
