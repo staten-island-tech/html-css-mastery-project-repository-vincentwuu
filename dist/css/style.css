@@ -64,7 +64,7 @@
 .card-container {
   padding-bottom: 0;
   border: 0;
-  height: 100vh;
+  height: 85vh;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,6 +75,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 600px) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 @media (min-width: 600px) {
@@ -122,8 +134,6 @@
   transition: all 1s;
   font-size: 3rem;
   color: white;
-  -webkit-box-shadow: 0 0 2.5rem 2.5rem #e97575 inset;
-          box-shadow: 0 0 2.5rem 2.5rem #e97575 inset;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
 }
@@ -211,6 +221,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#card-side-back-1 {
+  background-image: url(img/WTCenter.jpg);
+}
+
+#card-side-back-2 {
+  background-color: blue;
+}
+
+#card-side-back-3 {
+  background-color: blue;
 }
 
 .card:hover .card-side-front {

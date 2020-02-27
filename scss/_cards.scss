@@ -10,11 +10,15 @@
 .card-container {
     padding-bottom: 0;
     border: 0;
-    height: 100vh;
+    height: 85vh;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     @include tablet {
         flex-direction: column;
         justify-content: space-evenly;
@@ -40,7 +44,6 @@
     transition: all 1s;
     font-size: 3rem;
     color: white;
-    box-shadow: 0 0 2.5rem 2.5rem rgba($color: #e97575, $alpha: 1.0) inset;
     backface-visibility: hidden;
     @include tablet {
         height: 25rem;
@@ -101,6 +104,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#card-side-back-1 {
+    background-image: url(img/WTCenter.jpg);
+}
+
+#card-side-back-2 {
+    background-color: blue;
+}
+
+#card-side-back-3 {
+    background-color: blue;
 }
 
 .card:hover .card-side-front {
