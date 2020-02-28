@@ -48,7 +48,6 @@
     @include tablet {
         height: 25rem;
         width: 25rem;
-        border-radius: 3rem;
     }
     @include laptop {
         height: 50rem;
@@ -57,7 +56,6 @@
     @include desktop {
         height: 60rem;
         width: 40rem;
-        border-radius: 4rem;
     }
 }
 

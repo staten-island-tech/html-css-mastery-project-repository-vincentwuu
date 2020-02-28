@@ -142,7 +142,6 @@
   .card-side {
     height: 25rem;
     width: 25rem;
-    border-radius: 3rem;
   }
 }
 
@@ -157,7 +156,6 @@
   .card-side {
     height: 60rem;
     width: 40rem;
-    border-radius: 4rem;
   }
 }
 
