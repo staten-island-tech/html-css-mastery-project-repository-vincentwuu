@@ -77,7 +77,7 @@
           align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 350px) {
   .card-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -136,6 +136,13 @@
   color: white;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
+}
+
+@media (min-width: 350px) {
+  .card-side {
+    height: 15rem;
+    width: 15rem;
+  }
 }
 
 @media (min-width: 600px) {
@@ -226,11 +233,11 @@
 }
 
 #card-side-back-2 {
-  background-color: blue;
+  background-image: url(img/Park.jpg);
 }
 
 #card-side-back-3 {
-  background-color: blue;
+  background-image: url(img/dumbo.jpg);
 }
 
 .card:hover .card-side-front {
@@ -241,6 +248,68 @@
 .card:hover .card-side-back {
   -webkit-transform: rotateY(0deg);
           transform: rotateY(0deg);
+}
+
+.food {
+  height: 100vh;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.text-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45vw;
+}
+
+@media (min-width: 350px) {
+  .text-food {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .text-food {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .text-food {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .text-food {
+    font-size: 5rem;
+  }
+}
+
+.food-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45vw;
+}
+
+.food-gallery {
+  height: 15rem;
+  width: 15rem;
 }
 
 html {

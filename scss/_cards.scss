@@ -45,6 +45,10 @@
     font-size: 3rem;
     color: white;
     backface-visibility: hidden;
+    @include phone {
+        height: 15rem;
+        width: 15rem;
+    }
     @include tablet {
         height: 25rem;
         width: 25rem;
@@ -109,11 +113,11 @@
 }
 
 #card-side-back-2 {
-    background-color: blue;
+    background-image: url(img/Park.jpg);
 }
 
 #card-side-back-3 {
-    background-color: blue;
+    background-image: url(img/dumbo.jpg);
 }
 
 .card:hover .card-side-front {
