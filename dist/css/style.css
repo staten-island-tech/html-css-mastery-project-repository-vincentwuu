@@ -294,7 +294,7 @@
   }
 }
 
-.food-container {
+.food-gallery {
   margin-left: 50vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -308,9 +308,32 @@
   width: 45vw;
 }
 
-.food-gallery {
-  height: 15rem;
-  width: 15rem;
+@media (min-width: 350px) {
+  .food-gallery-images {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .food-gallery-images {
+    height: 15rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .food-gallery-images {
+    height: 20rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .food-gallery-images {
+    height: 25rem;
+    width: 35rem;
+  }
 }
 
 html {
