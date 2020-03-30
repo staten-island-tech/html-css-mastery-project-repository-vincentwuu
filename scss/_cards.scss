@@ -1,0 +1,130 @@
+@import "_variables.scss";
+
+.landscape {
+    height: 100vh;
+    position: relative;
+    background-image: url(img/ocean.jpg);
+    margin-bottom: 1rem;
+}
+
+.card-container {
+    padding-bottom: 0;
+    border: 0;
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include phone {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    @include laptop {
+        flex-direction: row;
+    }
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.card {
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-side {
+    z-index: 1;
+    transition: all 1s;
+    font-size: 3rem;
+    color: white;
+    backface-visibility: hidden;
+    @include phone {
+        height: 15rem;
+        width: 15rem;
+    }
+    @include tablet {
+        height: 25rem;
+        width: 25rem;
+    }
+    @include laptop {
+        height: 50rem;
+        width: 30rem;
+    }
+    @include desktop {
+        height: 60rem;
+        width: 40rem;
+    }
+}
+
+.card-side-front {
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+        font-size: 3rem;
+    }
+    @include desktop {
+        font-size: 4rem;
+    }
+}
+
+#card-side-front-1 {
+    background-image: url(img/times_square.jpg
+    );
+}
+
+#card-side-front-2 {
+    background-image: url(img/central_park.jpg
+    );
+}
+
+#card-side-front-3 {
+    background-image: url(img/BKBridge.jpg
+    );
+}
+
+.card-side-back {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transform: rotateY(180deg);
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-side-back-1 {
+    background-image: url(img/WTCenter.jpg);
+}
+
+#card-side-back-2 {
+    background-image: url(img/Park.jpg);
+}
+
+#card-side-back-3 {
+    background-image: url(img/dumbo.jpg);
+}
+
+.card:hover .card-side-front {
+    transform: rotateY(-180deg);
+}
+   
+.card:hover .card-side-back {
+    transform: rotateY(0deg);
+}
+  

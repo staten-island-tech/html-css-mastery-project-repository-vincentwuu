@@ -1,13 +1,395 @@
+.intro {
+  height: 100vh;
+  background-image: url(img/NYC.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 1rem;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Galada", cursive;
+}
+
+.heading-title {
+  width: 80vw;
+  margin: 0 auto;
+  letter-spacing: 0rem;
+  font-size: 4rem;
+  text-shadow: 0.5rem 0.5rem black;
+}
+
+@media (min-width: 600px) {
+  .heading-title {
+    font-size: 6rem;
+    letter-spacing: 1.8rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .heading-title {
+    font-size: 10rem;
+    letter-spacing: 2.2rem;
+  }
+}
+
+.landscape {
+  height: 100vh;
+  position: relative;
+  background-image: url(img/ocean.jpg);
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  padding-bottom: 0;
+  border: 0;
+  height: 85vh;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 350px) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-side {
+  z-index: 1;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 3rem;
+  color: white;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@media (min-width: 350px) {
+  .card-side {
+    height: 15rem;
+    width: 15rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .card-side {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .card-side {
+    height: 50rem;
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card-side {
+    height: 60rem;
+    width: 40rem;
+  }
+}
+
+.card-side-front {
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 600px) {
+  .card-side-front {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .card-side-front {
+    font-size: 4rem;
+  }
+}
+
+#card-side-front-1 {
+  background-image: url(img/times_square.jpg);
+}
+
+#card-side-front-2 {
+  background-image: url(img/central_park.jpg);
+}
+
+#card-side-front-3 {
+  background-image: url(img/BKBridge.jpg);
+}
+
+.card-side-back {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#card-side-back-1 {
+  background-image: url(img/WTCenter.jpg);
+}
+
+#card-side-back-2 {
+  background-image: url(img/Park.jpg);
+}
+
+#card-side-back-3 {
+  background-image: url(img/dumbo.jpg);
+}
+
+.card:hover .card-side-front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card:hover .card-side-back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+.food {
+  height: 100vh;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.text-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45vw;
+}
+
+@media (min-width: 350px) {
+  .text-food {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .text-food {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .text-food {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .text-food {
+    font-size: 5rem;
+  }
+}
+
+.food-gallery {
+  margin-left: 50vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45vw;
+}
+
+@media (min-width: 350px) {
+  .food-gallery-images {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .food-gallery-images {
+    height: 15rem;
+    width: 20rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .food-gallery-images {
+    height: 20rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 1100px) {
+  .food-gallery-images {
+    height: 25rem;
+    width: 35rem;
+  }
+}
+
 html {
-  font-size: 62.5%;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.header {
-  position: relative;
-  height: 100vh;
+body {
+  background-color: #ffcccc;
+}
+
+.btn {
+  background-color: white;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.one {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#33CCFF), to(#66FFFF));
+  background-image: linear-gradient(to bottom right, #33CCFF, #66FFFF);
+  border-radius: 10px;
+  font-weight: 100;
+  padding: 20px;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.one:hover {
+  color: #404040;
+  font-weight: 700;
+  letter-spacing: 3px;
+  background: none;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 1rem;
 }
 /*# sourceMappingURL=style.css.map */
